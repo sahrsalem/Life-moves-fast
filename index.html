@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coming Soon — Life & Speed</title>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video class="bg-video" playsinline autoplay muted loop poster="assets/img/bg-fallback.jpg">
+      <source src="assets/mp4/bg.mp4" type="video/mp4" />
+      <!-- fallback message -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Main content (left-side) -->
+    <div class="masthead">
+      <div class="masthead-inner">
+        <div class="left-panel">
+          <div class="life-script" aria-label="Life script">
+            <p>Life moves fast.</p>
+            <p>In our rush to chase what’s next,</p>
+            <p>we often forget what truly matters.</p>
+            <p>Slow down. Feel the moments.</p>
+            <p>Because not everything worth having can be rushed.</p>
+          </div>
+
+          <div class="contact-section">
+            <input class="email-input" type="email" id="emailInput" placeholder="Enter your email..." aria-label="Email address">
+            <button class="contact-btn" id="contactButton">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social icons fixed on the right (vertical) -->
+    <div class="social-rail" aria-hidden="false">
+      <a class="social-link" id="linkedin" href="#" target="_blank" title="LinkedIn (replace link)">
+        <div class="social-circle"><i class="fab fa-linkedin-in"></i></div>
+      </a>
+      <a class="social-link" id="facebook" href="#" target="_blank" title="Facebook (replace link)">
+        <div class="social-circle"><i class="fab fa-facebook-f"></i></div>
+      </a>
+      <a class="social-link" id="instagram" href="#" target="_blank" title="Instagram (replace link)">
+        <div class="social-circle"><i class="fab fa-instagram"></i></div>
+      </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/effects.js"></script>
+  </body>
+</html>
+
