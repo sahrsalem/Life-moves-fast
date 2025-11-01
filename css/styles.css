@@ -1,10 +1,11 @@
-/* styles.css — final layout and effects */
 
-/* Reset & base */
-* { box-sizing: border-box; }
+
+*{ 
+  box-sizing: border-box; 
+  }
 html,body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; background: #000; color: #fff; }
 
-/* Background video (full-screen centered cover) */
+
 .bg-video {
   position: fixed;
   top: 50%;
@@ -21,7 +22,7 @@ html,body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; backgro
   background-color: #000;
 }
 
-/* Masthead container that sits above the video */
+
 .masthead {
   position: relative;
   z-index: 1;
@@ -31,47 +32,47 @@ html,body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; backgro
   width: 100%;
 }
 
-/* inner wrapper to allow spacing from top/bottom */
+
 .masthead-inner {
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* left aligned content */
+  justify-content: flex-start; 
 }
 
-/* Left panel (script + contact) with top/bottom breathing room */
+
 .left-panel {
   max-width: 720px;
-  margin: 6vh 0;               /* leave space from top/bottom */
-  padding-left: 6vw;          /* distance from left edge */
+  margin: 6vh 0;               
+  padding-left: 6vw;          
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.6rem;
 }
 
-/* Life script lines */
+
 .life-script p {
   margin: 0;
   font-size: clamp(1.1rem, 1.6vw, 1.6rem);
   line-height: 1.5;
   opacity: 0;
   transform: translateY(18px);
-  /* animation applied via JS with stagger delay */
+  
 }
 
-/* word spans (for hover color change) */
+
 .life-script .word {
   display: inline-block;
   transition: color 0.28s ease, transform 0.18s ease;
   cursor: default;
 }
 
-/* subtle pulse on hover (optional) */
+
 .life-script .word:hover {
   transform: translateY(-3px);
 }
 
-/* Contact section (email + button) */
+
 .contact-section {
   margin-top: 0.6rem;
   display: flex;
@@ -93,7 +94,7 @@ html,body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; backgro
 
 .email-input::placeholder { color: rgba(255,255,255,0.65); }
 
-/* Contact button (green) */
+
 .contact-btn {
   background: linear-gradient(90deg,#00b33c,#00e676);
   color: #fff;
@@ -111,67 +112,66 @@ html,body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; backgro
   box-shadow: 0 10px 28px rgba(0,217,100,0.22);
 }
 
-/* Button glowing state class (applied by JS) */
+
 .contact-btn.glow {
   box-shadow: 0 0 28px 8px rgba(0,255,120,0.55);
   transform: scale(1.03);
 }
 
-/* Social rail (fixed on RIGHT, vertically centered with top/bottom breathing room) */
 .social-rail {
   position: fixed;
   right: 28px;
-  top: 10vh;                    /* leave space from top */
-  bottom: 10vh;                 /* leave space from bottom */
+  top: 10vh;                    
+  bottom: 10vh;                 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* distributes space evenly between items */
+  justify-content: space-between; 
   gap: 1rem;
   z-index: 2;
   pointer-events: auto;
 }
 
-/* Each link container */
+
 .social-link {
   text-decoration: none;
   display: block;
 }
 
-/* circular black bg + white icon */
+
 .social-circle {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.9);   /* near-black circular bg */
+  background: rgba(0,0,0,0.9);   
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  transform: translateX(40px);   /* start off-screen to the right for slide-in */
+  transform: translateX(40px);   
   opacity: 0;
   transition: transform .4s cubic-bezier(.2,.9,.3,1), box-shadow .18s ease;
 }
 
-/* icon size */
+
 .social-circle i {
   font-size: 0.95rem;
   line-height: 1;
 }
 
-/* hover glow/effect */
+
 .social-link:hover .social-circle {
   box-shadow: 0 10px 30px rgba(255,255,255,0.06);
   transform: translateX(0) scale(1.04);
 }
 
-/* When JS toggles .visible on social-circle - slide-in */
+
 .social-circle.visible {
   transform: translateX(0);
   opacity: 1;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
   .left-panel { padding-left: 4vw; max-width: 560px; }
   .social-rail { right: 14px; }
@@ -181,3 +181,4 @@ html,body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; backgro
   .left-panel { padding-left: 6vw; margin-top: 5vh; margin-bottom: 5vh; }
   .email-input { width: 170px; }
 }
+
