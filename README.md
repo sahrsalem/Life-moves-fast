@@ -18,5 +18,6 @@ Custom assets (images & video)
 
 To remind us that design can tell stories —
 and that even in a fast-moving world, we can pause to feel.
+[ https://sahrsalem.github.io/Life-moves-fast/ ]
 
 Created by Sahr Salem
