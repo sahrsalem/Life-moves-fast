@@ -1,4 +1,4 @@
-// =============== Word hover color effect ===============
+
       const paragraphs = document.querySelectorAll('.life-script p');
       paragraphs.forEach(p => {
         const words = p.textContent.split(' ');
@@ -17,7 +17,7 @@
         });
       });
 
-      // =============== Button glow on click ===============
+    
       const contactButton = document.getElementById('contactButton');
       if (contactButton) {
         contactButton.addEventListener('click', (e) => {
@@ -29,4 +29,5 @@
             contactButton.textContent = "Contact Me";
           }, 2500);
         });
+
       }
